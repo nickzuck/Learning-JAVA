@@ -30,6 +30,7 @@ class Demo
 		Demo d3= new Demo () ;
 		modify () ;
 		d3.add () ;
+		d.i.display () ;
 		d.new Inner ().display () ;
 	}
 	class Inner  //inner class behaves as a member function of the outer class
@@ -46,5 +47,5 @@ class Demo
 	}
 
 	Inner i = new Inner() ; 
-	i.display()  ;
+	//i.display()  ;
 }
