@@ -1,3 +1,5 @@
+//Add the code of finally () ..We Want some testing
+
 class Except
 {
     public static void main (String [] args) {
@@ -16,9 +18,6 @@ class Except
         int b= 0; 
         int ans = a/b ; 
         System.out.println("The answer is " + ans ) ; 
-    }
-    inline void testing(){
-        System.out.println("We are testing the inline") ;
     }
 }
 
