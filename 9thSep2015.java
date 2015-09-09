@@ -17,6 +17,9 @@ class Except
         int ans = a/b ; 
         System.out.println("The answer is " + ans ) ; 
     }
+    inline void testing(){
+        System.out.println("We are testing the inline") ;
+    }
 }
 
 
