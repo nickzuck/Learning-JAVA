@@ -7,8 +7,6 @@ class Complex
         y = b ; 
     }
     Complex () {
-        x = 0 ; 
-        y = 0; 
     }
     
     public static void main (String [] args){
@@ -22,6 +20,7 @@ class Complex
 
     Complex sum (Complex b ) {
         Complex ans = new Complex() ; 
+	//System.out.println(ans.x + "  " + ans.y) ; 
         ans.x = b.x + x ; 
         ans.y = b.y + y ; 
         return ans ;

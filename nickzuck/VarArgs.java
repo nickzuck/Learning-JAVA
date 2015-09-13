@@ -3,7 +3,7 @@
 class VarArgs
 {
 
-    // vaTest() now userse a vararg .
+    // vaTest() now uses a vararg .
     void vaTest(int ... v){
         System.out.println("Number of args: "+ v.length + "\nContents are:" ) ; 
         for (int x : v ) 
