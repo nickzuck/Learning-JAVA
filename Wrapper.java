@@ -13,6 +13,8 @@ class Wrapper
     public static void main (String[] args){
         Wrapper object = new Wrapper() ; 
         object.print();
+        UnboxingError test= new UnboxingError() ; 
+        test.function () ; 
     }
     void print(){
         System.out.println("Integer = " + i ) ; 
@@ -28,4 +30,13 @@ class Wrapper
         System.out.println (ch) ;
         System.out.println(ch.charValue()) ;
     } 
+}
+
+class UnboxingError
+{
+    void function () {
+        Integer iob = 1002; 
+        int i = iob.byteValue() ; 
+        System.out.println (i); 
+    }
 }
