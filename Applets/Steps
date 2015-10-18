@@ -1,0 +1,9 @@
+/*The steps involved in developing and testing a apptlet  */ 
+
+1) Building an applet code  
+2) Creating a executable applet 
+3) Designing a Web page using HTML tags 
+4) Preparing <APPLET>  tag 
+5) Incorporating <APPLET> tag 
+6) Creating HTML file 
+7) Testing the applet code
