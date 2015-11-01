@@ -28,7 +28,7 @@ class Lower extends Upper
     } 
     Lower (int a , int b , int c , float d){
         super  (a , b , d); 
-        d = c ; 
+        this.d = c ; 
     }
     
     void display(){
