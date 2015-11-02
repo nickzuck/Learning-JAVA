@@ -8,39 +8,43 @@
 class RunnableThread implements Runnable 
 {
     Thread t ;
-    RunnableThread(){
-        t = new Thread(this , "DemoThread"); //creating a new thread
-        System.out.println("Child thread = "  + t); 
-        t.start(); //for starting the thread 
+    RunnableThread(){ 
+        t = new Thread(this , "New Thread");
+        System.out.println("New Thread " + t);
+        t.start();
     }
-    
+
     public void run(){
         try{
-            for(int i = 0 ; i<5 ; i++){
-                System.out.println("New thread counter " + i);
+            for(int i = 1 ;i<=5 ;i++){
+                System.out.println("New Thread counter" + i);
+                Thread.sleep(500); //sleep for 500 miliseconds
             }
-        } catch(InterruptedException e){
-            System.out.println("New Thread interrupted");
         }
-        System.out.println("Exiting new thread");
+        catch(Exception e)
+        {
+            System.out.println("Exception occured");
+            System.out.println(e) ;
+        }
+        System.out.println("Exiting New Thread");
     }
-
 }
-class MainThread
-{
-    public static void main(String [] args){
-        new RunnableThread() ; 
-            try{
-                for(int i = 0 ;i<5 ;i++){
-                    System.out.println("Main Thrad counter " + i);
-                    //Thread.sleep(1000);
-                }
-            }
 
-            catch(InterruptedException  e){
-                System.out.println("Main thread interrrupted");
+class MainClass 
+{
+    public static void main (String [] args){
+        new RunnableThread() ;
+        try {
+            for(int i = 1 ;i<=5 ; i++){
+                System.out.println("Main Thread counter" + i);
+                Thread.sleep(200); //sleep for 200 miilliseconds
             }
-            System.out.println("Main thrad exiting");
         }
-    
+        catch (Exception  e){
+            System.out.println("exception occured in main thread");
+            System.out.println(e);
+            
+        }
+        System.out.println("Exitiing Main thread");
+    }
 }
