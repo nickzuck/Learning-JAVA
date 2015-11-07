@@ -5,7 +5,8 @@ class NewThread extends Thread{
     NewThread(String threadname){
         super(threadname);
         name = threadname ;
-        System.out.println("New Thread: " + t);
+        t = this ;
+        System.out.println("New Thread: " + name);
         start() ; 
     }
 
