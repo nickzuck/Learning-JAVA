@@ -31,6 +31,8 @@ public class ButtonDemo extends Applet implements ActionListener{
 
     public void actionPerformed(ActionEvent ae){
         String str = ae.getActionCommand();
+        long time = ae.getWhen();
+        System.out.println("Event occured at time = " + time);
         if(str.equals("YES"))
             msg = "You pressed yes";
         else if(str.equals("NO"))
